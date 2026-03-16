@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rob Newland for Los Angeles County Assessor</title>
+  <meta
+    name="description"
+    content="Rob Newland for Los Angeles County Assessor. Real estate appraiser and housing economist focused on transparency, modernization, and fairness in property assessments."
+  />
+  <meta property="og:title" content="Rob Newland for Los Angeles County Assessor" />
+  <meta
+    property="og:description"
+    content="A campaign for transparency, modernization, and fairness in Los Angeles County property assessments."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.newland4assessor.com/" />
+  <meta property="og:image" content="https://www.newland4assessor.com/Header.jpg" />
+  <meta name="theme-color" content="#0b3d91" />
+
+  <style>
+    :root {
+      --blue: #0b3d91;
+      --blue-dark: #072a63;
+      --blue-light: #eef4ff;
+      --gold: #b88400;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --bg: #f7f9fc;
+      --white: #ffffff;
+      --border: #d3dce7;
+      --focus: #ffbf47;
+      --max: 1160px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    a {
+      color: var(--blue-dark);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover { text-decoration-thickness: 3px; }
+
+    a:focus-visible,
+    button:focus-visible,
+    .btn:focus-visible,
+    .nav-links a:focus-visible {
+      outline: 4px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 8px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -100px;
+      z-index: 1000;
+      background: #000;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .skip-link:focus { top: 12px; }
+    .container { width: min(100% - 32px, var(--max)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--blue);
+      letter-spacing: 0.2px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 700;
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+
+    .nav-links a:hover { background: var(--blue-light); }
+
+    .btn {
+      display: inline-block;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary { background: var(--blue); color: var(--white); }
+    .btn-primary:hover { background: var(--blue-dark); color: var(--white); }
+    .btn-secondary { background: var(--white); color: var(--blue-dark); border-color: var(--blue); }
+    .btn-secondary:hover { background: var(--blue-light); }
+
+    .hero-image { background: #0d2347; }
+    .hero-image img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-content {
+      padding: 56px 0 36px;
+      background: linear-gradient(135deg, rgba(11, 61, 145, 0.98), rgba(7, 42, 99, 0.98));
+      color: var(--white);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #fff;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.24);
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0 0 16px; font-size: clamp(2.2rem, 4vw, 4rem); }
+    h2 { font-size: clamp(1.7rem, 2.6vw, 2.4rem); margin: 0 0 12px; color: var(--blue); }
+    h3 { font-size: 1.22rem; margin-top: 0; color: var(--blue); }
+
+    .hero-content p, .hero-content li { color: rgba(255,255,255,0.98); }
+    .hero-lead { font-size: 1.12rem; max-width: 64ch; margin: 0 0 22px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card h2 { color: #fff; font-size: 1.2rem; }
+    .hero-card ul { margin: 0; padding-left: 20px; }
+
+    .pill-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .pill {
+      background: rgba(255,255,255,0.16);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.24);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    section { padding: 64px 0; }
+    .section-intro { max-width: 76ch; margin: 0 0 28px; color: var(--muted); }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .portrait-card {
+      position: sticky;
+      top: 98px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .portrait-card img { width: 100%; height: auto; }
+    .portrait-caption { padding: 18px 20px 22px; }
+    .portrait-caption p { margin: 0; color: var(--muted); }
+
+    .content-stack { display: grid; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+    .list-clean { list-style: none; padding: 0; margin: 0; }
+    .list-clean li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .list-clean li:last-child { border-bottom: 0; }
+
+    .priority-number {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: #fff;
+      text-align: center;
+      line-height: 34px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .quote {
+      border-left: 5px solid var(--gold);
+      padding-left: 18px;
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-list { list-style: none; padding: 0; margin: 0; }
+    .contact-list li { padding: 8px 0; }
+    .small { font-size: 0.94rem; color: var(--muted); }
+
+    footer { padding: 32px 0 48px; }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid, .about-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .portrait-card { position: static; max-width: 420px; }
+    }
+
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; }
+      .nav-links { gap: 8px; }
+      .nav-links a { padding: 8px 10px; }
+      .hero-content { padding-top: 44px; }
+    }
+
+    @media (max-width: 560px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Rob Newland for Assessor home">ROB NEWLAND FOR ASSESSOR</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#priorities">Priorities</a>
+        <a href="#housing-data">Housing Data</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="donate.html" aria-label="Donate to the campaign">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-image" aria-label="Campaign header image">
+      <img src="Header.jpg" alt="Rob Newland campaign header with Los Angeles skyline and contribute online message" />
+    </section>
+
+    <section class="hero-content" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Candidate for Los Angeles County Assessor</p>
+          <h1 id="hero-title">Transparency. Modernization. Fairness.</h1>
+          <p class="hero-lead">
+            Rob Newland is a real estate appraiser and housing economist running for Los Angeles County Assessor to make property valuations easier to understand, more transparent to the public, and more consistent under California law.
+          </p>
+          <p class="hero-lead">
+            The Assessor’s office affects every homeowner, renter, business, school district, city, and local service in the county. It is one of the most important offices most voters rarely hear about until they receive a tax bill they do not understand.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="donate.html">Contribute Securely</a>
+            <a class="btn btn-secondary" href="#about">Meet Rob</a>
+          </div>
+
+          <div class="pill-row" aria-label="Campaign priorities">
+            <span class="pill">Property Tax Transparency</span>
+            <span class="pill">Modern Technology</span>
+            <span class="pill">Fair Assessments</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-labelledby="why-running-title">
+          <h2 id="why-running-title">Why Rob is running</h2>
+          <ul>
+            <li>The assessor’s core job is valuation, and Rob’s professional background is directly aligned with that responsibility.</li>
+            <li>Taxpayers deserve to understand how their property was valued and why.</li>
+            <li>The office should operate with greater transparency, modern technology, and a stronger commitment to public service.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Meet Rob Newland</h2>
+        <p class="section-intro">
+          Rob Newland is a real estate appraiser and housing economist who has spent his career studying property values and how they affect homeowners, businesses, and local government.
+        </p>
+
+        <div class="about-grid">
+          <article class="card portrait-card" aria-labelledby="portrait-title">
+            <img src="RobNewland.jpg" alt="Portrait of Rob Newland in a suit and tie" />
+            <div class="portrait-caption">
+              <h3 id="portrait-title">Current job</h3>
+              <p>Real Estate Appraiser and Housing Economist</p>
+            </div>
+          </article>
+
+          <div class="content-stack">
+            <article class="card" aria-labelledby="qualifications-title">
+              <h3 id="qualifications-title">Qualifications</h3>
+              <p>
+                The assessor’s job is fundamentally about valuation: determining the taxable value of millions of properties fairly and consistently under California law. Rob’s professional background is directly aligned with that responsibility.
+              </p>
+              <p>
+                Working with property owners navigating the assessment system has also shown him how confusing and opaque it can be for ordinary taxpayers. He is not running as a career government insider. He is running because the assessor’s office should operate with greater transparency, modern technology, and stronger public service.
+              </p>
+            </article>
+
+            <article class="card" aria-labelledby="plain-english-title">
+              <h3 id="plain-english-title">How Rob explains the office</h3>
+              <p class="quote">
+                “The assessor determines the taxable value of every property in Los Angeles County. Those valuations affect how property taxes are distributed to schools, cities, and local services across the county.”
+              </p>
+              <p>
+                Property owners deserve to understand how their property was assessed and why. Rob believes government should not be a mystery when it comes to something as important as property taxes.
+              </p>
+            </article>
+
+            <article class="card" aria-labelledby="service-title">
+              <h3 id="service-title">What residents can expect</h3>
+              <ul class="list-clean">
+                <li>An assessor’s office that is easier to interact with</li>
+                <li>Clearer communication with the public</li>
+                <li>Professionalism and modern technology</li>
+                <li>An office that works for the public, not the other way around</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="priorities" aria-labelledby="priorities-title">
+      <div class="container">
+        <h2 id="priorities-title">Top priorities</h2>
+        <p class="section-intro">
+          Fairness, transparency, and modernization would be the guiding principles of a Newland administration.
+        </p>
+
+        <div class="grid-3">
+          <article class="card" aria-labelledby="priority1-title">
+            <div class="priority-number" aria-hidden="true">1</div>
+            <h3 id="priority1-title">Transparency in property valuations</h3>
+            <p>
+              Taxpayers should be able to clearly see how their property value was determined. If taxpayers cannot understand how their property was valued, the system is not transparent enough.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="priority2-title">
+            <div class="priority-number" aria-hidden="true">2</div>
+            <h3 id="priority2-title">Modernizing the assessor’s office</h3>
+            <p>
+              Government systems should not be decades behind the private sector. Updated technology can improve accuracy, efficiency, and public access to information.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="priority3-title">
+            <div class="priority-number" aria-hidden="true">3</div>
+            <h3 id="priority3-title">Fairness and consistency</h3>
+            <p>
+              The same rules should apply to everyone. Property owners need confidence that assessments are applied evenly across the county.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="office-view-title">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card" aria-labelledby="office-view-title">
+            <h2 id="office-view-title">Rob’s view of the office today</h2>
+            <p>
+              The assessor’s office performs an essential function and many dedicated public employees work hard there. However, like many large government agencies, it struggles with outdated systems, complicated procedures, and a lack of transparency that can frustrate taxpayers.
+            </p>
+            <p>
+              Rob believes the office can be run more efficiently and more openly.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="prop13-title">
+            <h2 id="prop13-title">View of Proposition 13</h2>
+            <p>
+              Proposition 13 is a foundational part of California’s property tax system and provides important stability for homeowners and businesses.
+            </p>
+            <p>
+              Rob’s view is that the assessor’s job is not to rewrite Proposition 13, but to administer it fairly and accurately according to the law and ensure taxpayers understand their rights under it.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="housing-data" aria-labelledby="housing-data-title">
+      <div class="container">
+        <h2 id="housing-data-title">Using assessor data to help solve bigger problems</h2>
+        <p class="section-intro">
+          Rob believes government data should serve the public, not remain hidden. He wants the assessor’s office to be more proactive in helping policymakers understand where housing opportunities exist and where the system is breaking down.
+        </p>
+
+        <div class="content-stack">
+          <article class="card" aria-labelledby="map-title">
+            <h3 id="map-title">1. Launch a countywide vacant property and land transparency map</h3>
+            <p>
+              Rob wants to use assessor data, including land-use codes and improvement-to-land value ratios, to help identify vacant or underdeveloped land that could potentially support housing development, redevelopment opportunities, or community land trust strategies.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="str-title">
+            <h3 id="str-title">2. Use assessor data to identify illegal short-term rentals</h3>
+            <p>
+              Rob believes ownership patterns, homeowner exemption data, and parcel analysis can help enforcement agencies more effectively identify possible illegal short-term rental activity.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="homelessness-title">
+            <h3 id="homelessness-title">3. Support housing and homelessness solutions with better data</h3>
+            <p>
+              Assessor records can help policymakers identify underutilized office buildings, declining retail space, struggling motels, vacant properties, and ownership patterns that may reveal new housing opportunities or market concentration trends.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="land-use-title">
+            <h3 id="land-use-title">4. Improve transparency about land use and ownership patterns</h3>
+            <p>
+              Rob wants the assessor’s parcel data used more effectively so communities and policymakers can better understand where land is underutilized and where housing opportunities may exist.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="open-data-title">
+            <h3 id="open-data-title">5. Modernize the office with open data and public transparency</h3>
+            <p>
+              The Assessor manages one of the largest property datasets in the country. Rob wants to modernize the office’s systems and publish aggregated data that helps planners, researchers, policymakers, and the public understand vacancy patterns, land use, and ownership trends.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Frequently asked questions</h2>
+
+        <div class="content-stack">
+          <article class="card" aria-labelledby="promise-title">
+            <h3 id="promise-title">One promise Rob says his opponents would not make</h3>
+            <p>
+              Rob has committed to dramatically expanding public access to assessment data and valuation methodology.
+            </p>
+            <p class="quote">
+              “Property taxes should not be determined through a process the public cannot see.”
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="renewal-title">
+            <h3 id="renewal-title">Why leadership renewal matters</h3>
+            <p>
+              Rob believes it is healthy for democratic institutions to have leadership renewal. In the long run, voters should consider whether reasonable term limits for this office would help ensure continued innovation and accountability.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="endorsements-title">
+            <h3 id="endorsements-title">Endorsements</h3>
+            <p>None announced yet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" aria-labelledby="donate-title">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 id="donate-title">Support the campaign</h2>
+            <p class="section-intro" style="margin-bottom:0;">
+              Help build a campaign for transparent property valuations, modern public service, and fair assessments across Los Angeles County.
+            </p>
+          </div>
+
+          <div>
+            <a class="btn btn-primary" href="donate.html">Contribute Securely</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact the campaign</h2>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:Vote@Newland4Assessor.com">Vote@Newland4Assessor.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+17472158683">747-215-8683</a></li>
+              <li><strong>Website:</strong> <a href="https://www.Newland4Assessor.com">www.Newland4Assessor.com</a></li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="compliance-title">
+            <h2 id="compliance-title">Campaign information</h2>
+            <p class="small">Paid for by Rob Newland for Los Angeles County Assessor 2026.</p>
+            <p class="small">FPPC Committee ID: 1486815</p>
+            <p class="small">Mailing Address: PO Box 10502, Burbank, CA 91510</p>
+            <p class="small">Contributions are not tax deductible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-labelledby="footer-title">
+    <div class="container footer-inner">
+      <div>
+        <h2 id="footer-title" style="margin:0 0 6px; font-size:1rem; color:inherit;">Rob Newland for Los Angeles County Assessor 2026</h2>
+        <div>PO Box 10502, Burbank, CA 91510</div>
+      </div>
+
+      <div>
+        <div><strong>Email:</strong> <a href="mailto:Vote@Newland4Assessor.com">Vote@Newland4Assessor.com</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+17472158683">747-215-8683</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

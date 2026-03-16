@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate | Rob Newland for Los Angeles County Assessor</title>
+  <meta name="description" content="Donate to Rob Newland for Los Angeles County Assessor." />
+  <meta name="theme-color" content="#0b3d91" />
+  <style>
+    :root {
+      --blue: #0b3d91;
+      --blue-dark: #072a63;
+      --light: #eef4ff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --bg: #f7f9fc;
+      --white: #ffffff;
+      --border: #d3dce7;
+      --focus: #ffbf47;
+      --radius: 18px;
+      --max: 860px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { color: var(--blue-dark); }
+    a:focus-visible, .btn:focus-visible {
+      outline: 4px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 8px;
+    }
+    .container { width: min(100% - 32px, var(--max)); margin: 0 auto; }
+    .top { padding: 32px 0 16px; }
+    .home-link {
+      display: inline-block;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 18px;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3rem); color: var(--blue); }
+    h2 { margin: 0 0 12px; font-size: 1.3rem; color: var(--blue); }
+    .lead { font-size: 1.08rem; color: var(--muted); margin: 0 0 20px; }
+    .amounts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 22px 0;
+    }
+    .amount {
+      display: block;
+      background: var(--light);
+      color: var(--blue-dark);
+      text-align: center;
+      padding: 14px 10px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid #cfe0ff;
+    }
+    .amount:hover { background: #dfeaff; }
+    .btn {
+      display: inline-block;
+      min-height: 44px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn:hover { background: var(--blue-dark); }
+    .small { font-size: 0.95rem; color: var(--muted); }
+    ul { padding-left: 20px; }
+    @media (max-width: 640px) {
+      .amounts { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .amounts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container top">
+    <a class="home-link" href="index.html">&larr; Back to home</a>
+
+    <section class="card" aria-labelledby="donate-title">
+      <h1 id="donate-title">Donate to Rob Newland for Los Angeles County Assessor</h1>
+      <p class="lead">
+        Help bring fair property assessments, transparency, and accountability to Los Angeles County.
+      </p>
+      <p>
+        Your contribution powers a grassroots campaign focused on homeowners, renters, and small businesses.
+      </p>
+
+      <div class="amounts" aria-label="Suggested donation amounts">
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">$15</a>
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">$35</a>
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">$75</a>
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">$150</a>
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">$500</a>
+        <a class="amount" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">Custom Amount</a>
+      </div>
+
+      <p>
+        <a class="btn" href="https://buy.stripe.com/REPLACE_ME" target="_blank" rel="noopener noreferrer">Contribute Securely</a>
+      </p>
+
+      <p class="small">
+        Replace each <strong>REPLACE_ME</strong> link with your Stripe Payment Link.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="impact-title">
+      <h2 id="impact-title">Why your donation matters</h2>
+      <p>
+        Every homeowner and renter in Los Angeles County is affected by the Assessor’s Office. Your contribution helps the campaign reach voters, promote fair property tax policies, and build support for transparency and accountability.
+      </p>
+      <p class="small">
+        Join supporters helping bring clearer property valuations and better public service to Los Angeles County.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="compliance-title">
+      <h2 id="compliance-title">Contribution information</h2>
+      <p class="small">Paid for by Rob Newland for Los Angeles County Assessor 2026</p>
+      <p class="small">FPPC Committee ID: 1486815</p>
+      <p class="small">Contributions are not tax deductible.</p>
+      <p class="small">
+        California law requires political committees to collect the name, address, occupation, and employer of contributors.
+      </p>
+      <p class="small">
+        Contributions must be made from personal funds and may not be reimbursed by another person or entity.
+      </p>
+      <ul class="small">
+        <li>I am contributing my own personal funds.</li>
+        <li>I am a U.S. citizen or lawful permanent resident.</li>
+        <li>I am not making this contribution on behalf of another person or entity.</li>
+      </ul>
+      <p class="small">
+        Questions: <a href="mailto:Vote@Newland4Assessor.com">Vote@Newland4Assessor.com</a> | <a href="tel:+17472158683">747-215-8683</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
